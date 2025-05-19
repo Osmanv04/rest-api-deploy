@@ -1,0 +1,23 @@
+# Get para obtener el listado
+GET http://localhost:1234/movies
+### GEt para obtner por id
+GET http://localhost:1234/movies/6a360a18-c645-4b47-9a7b-2a71babbf3e0
+###GET para filtros
+GET http://localhost:1234/movies?genre=ACTION
+
+###POST
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+    "title": "Oppenheimer",
+    "year": 2023,
+    "director": "Christopher Nolan",
+    "duration": 152,
+    "poster": "https://i.ebayimg.com/images/g/yokAAOSw8w1YARbm/s-l1200.jpg",
+    "genre": [
+      "Drama"
+    ],
+    "rate": 9
+  }
+
