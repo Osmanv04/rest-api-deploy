@@ -7,10 +7,6 @@ const cors = require('cors')
 const PORT = process.env.PORT ?? 1234
 app.use(express.json())
 app.use(cors())
-app.use(cors({
-  origin: (origin, callback) => {
-  }
-}))
 app.get('', (req, res) => {
   res.json({ message: 'Hola mundo' })
 })
