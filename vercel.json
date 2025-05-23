@@ -1,19 +1,10 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "app.js",
-      "use": "@vercel/node"
-    }
+    { "src": "app.js", "use": "@vercel/node" }
   ],
   "routes": [
-    {
-      "src": "^/movies(?:/([^/]+))?$",
-      "dest": "app.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "web/$1"
-    }
+    { "src": "^/movies(?:/([^/]+))?$", "dest": "app.js" },
+    { "src": "/(.*)", "dest": "web/$1" }
   ]
 }
