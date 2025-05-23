@@ -4,7 +4,8 @@
     { "src": "app.js", "use": "@vercel/node" }
   ],
   "routes": [
-    { "src": "^/movies(?:/([^/]+))?$", "dest": "app.js" },
+    { "src": "/movies", "dest": "app.js" },
+    { "src": "/movies/(.*)", "dest": "app.js" },
     { "src": "/(.*)", "dest": "web/$1" }
   ]
 }
