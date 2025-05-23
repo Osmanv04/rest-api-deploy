@@ -8,11 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/movies.*",
-      "dest": "app.js"
-    },
-    {
-      "src": "/movies/(.*)",
+      "src": "^/movies(?:/([^/]+))?$",
       "dest": "app.js"
     },
     {
